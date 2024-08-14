@@ -1,0 +1,30 @@
+@mixin d-flexBox($between-or-around, $width, $align) {
+  display: $D-flx;
+  justify-content: $between-or-around;
+  width: $width;
+  align-items: $align;
+}
+
+@mixin shadows {
+  box-shadow: 0 4px 12px 0 rgba(2, 2, 2, 0.2), 0 4px 12px 0 rgba(2, 2, 2, 0.2);
+}
+
+@mixin gapping($extraPad: 0px, $extraMarg: 0px) {
+  padding: $extraPad;
+  margin: $extraMarg;
+}
+
+@mixin sameProperty($container1, $img1: null) {
+  #{$container1} {
+    @include gapping(0px, 0px 0px 30px);
+    @include shadows;
+    background-color: $white-color;
+  }
+  @if $img1 {
+    #{$img1} {
+      object-fit: cover;
+      width: 100%;
+      height: 280px;
+    }
+  }
+}
