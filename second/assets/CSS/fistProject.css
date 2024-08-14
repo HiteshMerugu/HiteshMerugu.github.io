@@ -9,6 +9,7 @@
   font-family: "relewayStatic";
   src: url(/assets/font/Raleway_Fonts/static/Raleway-Regular.ttf);
 }
+
 ::selection {
   background-color: #444;
 }
@@ -23,10 +24,12 @@ body,
   padding: 40px;
   margin: 0px;
 }
+
 .header h1 {
   padding: 0px;
   margin: 10px 0px;
 }
+
 .header .bgcolor {
   background-color: black;
   color: #f1f1f1;
@@ -40,33 +43,42 @@ body,
   width: 100%;
   align-items: none;
 }
+
 .main-container .left-container {
   width: 65%;
 }
+
 .main-container .left-container .container1 {
   padding: 0px;
   margin: 0px 0px 30px;
   box-shadow: 0 4px 12px 0 rgba(2, 2, 2, 0.2), 0 4px 12px 0 rgba(2, 2, 2, 0.2);
   background-color: white;
 }
+
 .main-container .left-container .img1 {
   object-fit: cover;
   width: 100%;
   height: 280px;
 }
-.main-container .left-container h2, .main-container .left-container p, .main-container .left-container h4 {
+
+.main-container .left-container h2,
+.main-container .left-container p,
+.main-container .left-container h4 {
   padding: 10px 0px;
   margin: 2px 12px;
 }
+
 .main-container .left-container h4 .date {
   opacity: 0.4;
 }
+
 .main-container .left-container .btn-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
 }
+
 .main-container .left-container .btn-container .btn {
   background-color: white;
   color: black;
@@ -76,17 +88,21 @@ body,
   padding: 12px 24px;
   margin: 0;
 }
+
 .main-container .left-container .btn-container .btn:hover {
   background-color: black;
   color: white;
   cursor: pointer;
 }
+
 .main-container .left-container .btn-container .cmnt {
   color: black;
   padding: 12px 24px;
   margin: 0;
 }
-.main-container .left-container .btn-container .cmnt-0, .main-container .left-container .btn-container .cmnt-2 {
+
+.main-container .left-container .btn-container .cmnt-0,
+.main-container .left-container .btn-container .cmnt-2 {
   background-color: black;
   color: white;
   padding: 12px;
@@ -96,44 +112,54 @@ body,
   font-size: 16px;
   text-align: center;
 }
+
 .main-container .left-container .btn-container .cmnt-2 {
   border-radius: 50%;
 }
+
 .main-container .right-container {
   width: 30%;
 }
+
 .main-container .right-container .container1 {
   padding: 0px;
   margin: 0px 0px 30px;
   box-shadow: 0 4px 12px 0 rgba(2, 2, 2, 0.2), 0 4px 12px 0 rgba(2, 2, 2, 0.2);
   background-color: white;
 }
+
 .main-container .right-container .img1 {
   object-fit: cover;
   width: 100%;
   height: 280px;
 }
+
 .main-container .right-container h3 {
   padding: 10px 0px;
   margin: 2px 12px;
 }
+
 .main-container .right-container .p1 {
   padding: 0px 0px 16px;
   margin: 2px 12px;
 }
+
 .main-container .right-container .container1 {
   padding: 0px;
   margin: 0px 0px 30px;
   box-shadow: 0 4px 12px 0 rgba(2, 2, 2, 0.2), 0 4px 12px 0 rgba(2, 2, 2, 0.2);
   background-color: white;
 }
+
 .main-container .right-container .container1-heading {
   padding: 8px 16px;
   margin: 0px;
 }
+
 .main-container .right-container .lists {
   background-color: white;
 }
+
 .main-container .right-container .lists .list1 {
   display: flex;
   justify-content: none;
@@ -143,39 +169,47 @@ body,
   margin: 0;
   border-bottom: 1px solid #f1f1f1;
 }
+
 .main-container .right-container .lists .list1 .icon {
   width: 50px;
   height: 45px;
   padding: 0px;
   margin: 0px 0px 0px 16px;
 }
+
 .main-container .right-container .lists .list1 .headings {
   display: flex;
   flex-direction: column;
 }
+
 .main-container .right-container .lists .list1 h5 {
   font-size: 18px;
   padding: 2px 12px;
   margin: 0px 5px;
 }
+
 .main-container .right-container .lists .list1 .p2 {
   font-size: 15px;
   padding: 2px 12px;
   margin: 0px 5px;
 }
+
 .main-container .right-container .lists .list1:hover {
   background-color: #bdb8b8;
   cursor: pointer;
 }
+
 .main-container .right-container .tags-container {
   padding: 5px 10px;
   margin: 0;
   background-color: white;
 }
+
 .main-container .right-container .tags-container .tags-para {
   padding: 0px;
   margin: 10px 0px;
 }
+
 .main-container .right-container .tags-container .tag {
   display: inline-block;
   background-color: #f1f1f1;
@@ -183,6 +217,7 @@ body,
   padding: 2px 12px;
   margin: 0px 0px 12px;
 }
+
 .main-container .right-container .tags-container .tag:hover {
   background-color: black;
   color: #f1f1f1;
@@ -195,6 +230,7 @@ body,
   margin: 16px 0px 0px;
   height: 25vh;
 }
+
 .footer .btn1,
 .footer .btn2 {
   background-color: #444;
@@ -206,12 +242,14 @@ body,
   padding: 15px 30px;
   margin: 0px 1px 30px;
 }
+
 .footer .btn1:hover,
 .footer .btn2:hover {
   background-color: black;
   color: #f1f1f1;
   cursor: pointer;
 }
+
 .footer p,
 .footer a {
   color: white;
@@ -222,14 +260,17 @@ body,
   .right-container {
     width: 55%;
   }
+
   .left-container {
     width: 35%;
   }
 }
+
 @media screen and (max-width: 576px) {
   .main-container {
     flex-direction: column;
   }
+
   .main-container .right-container,
   .main-container .left-container {
     width: 100%;
@@ -237,4 +278,3 @@ body,
   }
 }
 
-/*# sourceMappingURL=fistProject.css.map */
