@@ -1,0 +1,211 @@
+@import "Partials/variables";
+@import "Partials/utility";
+@import "Partials/mixins";
+
+body,
+.container1-heading {
+  background-color: $mainBg-color;
+}
+
+.header {
+  text-align: center;
+  @include gapping(40px, 0px);
+
+  h1 {
+    @include gapping(0px, 10px 0px);
+  }
+
+  .bgcolor {
+    background-color: $black-color;
+    color: $mainBg-color;
+    @include gapping(2px 12px, 0);
+  }
+}
+
+.main-container {
+  @include d-flexBox(space-around, 100%, none);
+
+  .left-container {
+    width: 65%;
+    @include sameProperty(".container1", ".img1");
+
+    h2 {
+      @include gapping(10px 0px, 2px 12px);
+    }
+
+    h4 {
+      @extend h2;
+      .date {
+        opacity: 0.4;
+      }
+    }
+
+    p {
+      @extend h2;
+    }
+
+    .btn-container {
+      @include d-flexBox(space-between, 100%, center);
+
+      .btn {
+        background-color: $white-color;
+        color: $black-color;
+        border: $btnBox-border;
+        text-align: $middel;
+        display: $D-inline;
+        @include gapping(12px 24px, 0);
+
+        &:hover {
+          background-color: $black-color;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+      .cmnt {
+        color: $black-color;
+        @include gapping(12px 24px, 0);
+
+        &-0 {
+          background-color: $black-color;
+          color: $white-color;
+          @include gapping(12px, 8px);
+          display: $D-inline;
+          line-height: 7px;
+          font-size: 16px;
+          text-align: center;
+        }
+
+        &-2 {
+          @extend .cmnt-0;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .right-container {
+    width: 30%;
+    @include sameProperty(".container1", ".img1");
+
+    h3 {
+      @include gapping(10px 0px, 2px 12px);
+    }
+
+    .p1 {
+      @include gapping(0px 0px 16px, 2px 12px);
+    }
+
+    @include sameProperty(".container1");
+
+    .container1-heading {
+      @include gapping(8px 16px, 0px);
+    }
+
+    .lists {
+      background-color: $white-color;
+
+      .list1 {
+        @include d-flexBox(none, 100%, center);
+        @include gapping(16px 0px, 0);
+        border-bottom: 1px solid $mainBg-color;
+
+        .icon {
+          width: 50px;
+          height: 45px;
+          @include gapping(0px, 0px 0px 0px 16px);
+        }
+
+        .headings {
+          display: $D-flx;
+          flex-direction: column;
+        }
+
+        h5 {
+          font-size: 18px;
+          @include gapping(2px 12px, 0px 5px);
+        }
+
+        .p2 {
+          font-size: 15px;
+          @include gapping(2px 12px, 0px 5px);
+        }
+
+        &:hover {
+          background-color: $hover-gray-color;
+          // background-color: darken($white-color, 90%);
+          cursor: pointer;
+        }
+      }
+    }
+    .tags-container {
+      @include gapping(5px 10px, 0);
+      background-color: $white-color;
+
+      .tags-para {
+        @include gapping(0px, 10px 0px);
+      }
+
+      .tag {
+        display: $D-inline;
+        background-color: $mainBg-color;
+        font-size: 12px;
+        @include gapping(2px 12px, 0px 0px 12px);
+        &:hover {
+          background-color: $black-color;
+          color: $mainBg-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $footer-bgColor;
+  @include gapping(32px 12px, 16px 0px 0px);
+  height: 25vh;
+
+  .btn1,
+  .btn2 {
+    background-color: $footer-btn-color;
+    border: none;
+    text-align: center;
+    color: $mainBg-color;
+    font-size: 14px;
+    cursor: pointer;
+    @include gapping(15px 30px, 0px 1px 30px);
+    &:hover {
+      background-color: black;
+      color: $mainBg-color;
+      cursor: pointer;
+    }
+  }
+  p,
+  a {
+    color: $white-color;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right-container {
+    width: 55%;
+  }
+
+  .left-container {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-container {
+    flex-direction: column;
+
+    .right-container,
+    .left-container {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+//display: flex box properties
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "relewayStatic";
+}
+
+@font-face {
+  font-family: "relewayStatic";
+  src: url(/assets/font/Raleway_Fonts/static/Raleway-Regular.ttf);
+}
+
+::selection {
+  background-color: $footer-btn-color;
+}

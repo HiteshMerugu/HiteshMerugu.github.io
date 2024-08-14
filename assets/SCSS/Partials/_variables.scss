@@ -1,0 +1,28 @@
+//variables
+$mainBg-color: #f1f1f1;
+$black-color: black;
+$lightGray-color: #ccc;
+$white-color: white;
+$hover-gray-color: #bdb8b8;
+$footer-bgColor: #616161;
+$footer-btn-color: #444;
+$btnBox-border: 1px solid $lightGray-color;
+$middel: center;
+$D-flx: flex;
+$D-inline: inline-block;
+// $f-size: 0px;
+
+// $width-height: (
+//   "p1": 20px,
+//   "p2": 15px,
+// );
+// .class {
+//   @each $name, $size in $width-height {
+//     .#{$name} {
+//       width: $size;
+//       height: $size;
+//     }
+//   }
+//   //   width: map-get($width-height, width, height);
+//   // height: 10px;
+// }
